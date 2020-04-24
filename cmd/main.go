@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"../pkg/gpushare"
-	"../pkg/routes"
-	"../pkg/scheduler"
-	"../pkg/utils/signals"
+	"gpushare-scheduler-extender/pkg/gpushare"
+	"gpushare-scheduler-extender/pkg/routes"
+	"gpushare-scheduler-extender/pkg/scheduler"
+	"gpushare-scheduler-extender/pkg/utils/signals"
 	"github.com/comail/colog"
 	"github.com/julienschmidt/httprouter"
 
