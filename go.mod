@@ -16,9 +16,9 @@ require (
         github.com/hashicorp/golang-lru v0.5.0 // indirect
         github.com/imdario/mergo v0.3.6 // indirect
         github.com/json-iterator/go v1.1.5 // indirect
-        github.com/julienschmidt/httprouter v1.2.0
+        github.com/julienschmidt/httprouter v1.3.0
         github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-        github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742 // indirect
+        github.com/modern-go/reflect2 v1.0.1 // indirect
         github.com/onsi/ginkgo v1.12.0 // indirect
         github.com/onsi/gomega v1.9.0 // indirect
         github.com/peterbourgon/diskv v2.0.1+incompatible // indirect
@@ -29,9 +29,9 @@ require (
         golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a // indirect
         golang.org/x/time v0.0.0-20161028155119-f51c12702a4d // indirect
         gopkg.in/inf.v0 v0.9.1 // indirect
-        k8s.io/api v0.0.0-20180712090710-2d6f90ab1293
-        k8s.io/apimachinery v0.0.0-20180904193909-def12e63c512
-        k8s.io/client-go v8.0.0+incompatible
-        k8s.io/kube-openapi v0.0.0-20180411164004-f442ecb314a3 // indirect
-        k8s.io/kubernetes v1.12.1
+        k8s.io/api v0.18.2
+        k8s.io/apimachinery v0.18.2
+        k8s.io/client-go v11.0.0+incompatible
+        k8s.io/kube-openapi v0.0.0-20190401085232-94e1e7b7574c // indirect
+        k8s.io/kubernetes v1.18.2
 )
