@@ -5,7 +5,7 @@ ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
 
-WORKDIR /go/src/github.com/AliyunContainerService/gpushare-scheduler-extender
+WORKDIR /go/src/gpushare-scheduler-extender
 COPY go.mod .
 COPY go.sum .
 RUN GO111MODULE=on go mod download
