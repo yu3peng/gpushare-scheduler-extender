@@ -72,7 +72,7 @@ func main() {
 	initKubeClient()
 	port := os.Getenv("PORT")
 	if _, err := strconv.Atoi(port); err != nil {
-		port = "39999"
+		port = "33333"
 	}
 
 	// Set up signals so we handle the first shutdown signal gracefully.
