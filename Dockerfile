@@ -8,7 +8,7 @@ COPY . .
 
 RUN go build -ldflags "-X 'main.BUILD_TIME=`date`' -X 'main.GO_VERSION=`go version`'" -o /go/bin/gpushare-sche-extender cmd/*.go
 
-FROM gcr.io/google_containers/ubuntu-slim:0.14
+FROM alpine
 
 COPY --from=build /go/bin/gpushare-sche-extender /usr/bin/gpushare-sche-extender
 
