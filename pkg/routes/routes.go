@@ -24,6 +24,12 @@ const (
 	inspectListPrefix = apiPrefix + "/inspect"
 )
 
+var (
+    VERSION    string
+    BUILD_TIME string
+    GO_VERSION string
+)
+
 func checkBody(w http.ResponseWriter, r *http.Request) {
 	if r.Body == nil {
 		http.Error(w, "Please send a request body", 400)
