@@ -27,7 +27,6 @@ var (
 	clientset    *kubernetes.Clientset
 	resyncPeriod = 30 * time.Second
 	clientConfig clientcmd.ClientConfig
-	VERSION    string
 	BUILD_TIME string
 	GO_VERSION string
 )
@@ -66,7 +65,7 @@ func main() {
 	colog.Register()
 	level := StringToLevel(os.Getenv("LOG_LEVEL"))
 	log.Print("Log level was set to ", strings.ToUpper(level.String()))
-	log.Printf("VERSION: %s\nBUILD_TIME: %s\nGO_VERSION: %s\n", VERSION, BUILD_TIME, GO_VERSION)
+	log.Printf("BUILD_TIME: %s\nGO_VERSION: %s\n", BUILD_TIME, GO_VERSION)
 	colog.SetMinLevel(level)
 	threadness := StringToInt(os.Getenv("THREADNESS"))
 
