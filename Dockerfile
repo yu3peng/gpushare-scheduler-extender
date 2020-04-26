@@ -11,9 +11,10 @@ COPY go.sum .
 RUN GO111MODULE=on go mod download
 COPY . .
 
-RUN go build -o /go/bin/gpushare-sche-extender cmd/*.go
+//RUN go build -o /go/bin/gpushare-sche-extender cmd/*.go
+RUN go install -ldflags "-s -w -X main.version=$VERSION" cmd/*.go
 
-FROM alpine
+FROM alpine:3.11.6
 
 COPY --from=build /go/bin/gpushare-sche-extender /usr/bin/gpushare-sche-extender
 
