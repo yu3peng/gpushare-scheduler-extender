@@ -12,3 +12,9 @@ $ IMAGE=yu3peng/gpushare-scheduler-extender:v0.1.0 && docker build . -t "${IMAGE
 ```
 $ kubectl apply -f https://raw.githubusercontent.com/yu3peng/gpushare-scheduler-extender/master/extender.yaml
 ```
+
+查看部署状态
+
+```
+kubectl -n kube-system logs deploy/my-scheduler -c my-scheduler-extender-ctr -f &
+```
