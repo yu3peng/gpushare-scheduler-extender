@@ -27,6 +27,9 @@ var (
 	clientset    *kubernetes.Clientset
 	resyncPeriod = 30 * time.Second
 	clientConfig clientcmd.ClientConfig
+	VERSION    string
+	BUILD_TIME string
+	GO_VERSION string
 )
 
 func initKubeClient() {
