@@ -25,9 +25,7 @@ const (
 )
 
 var (
-    VERSION    string
-    BUILD_TIME string
-    GO_VERSION string
+    version = "1.0.0"
 )
 
 func checkBody(w http.ResponseWriter, r *http.Request) {
