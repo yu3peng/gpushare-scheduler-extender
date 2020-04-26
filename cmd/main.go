@@ -66,6 +66,7 @@ func main() {
 	colog.Register()
 	level := StringToLevel(os.Getenv("LOG_LEVEL"))
 	log.Print("Log level was set to ", strings.ToUpper(level.String()))
+	log.Print("%s\n%s\n%s\n", VERSION, BUILD_TIME, GO_VERSION)
 	colog.SetMinLevel(level)
 	threadness := StringToInt(os.Getenv("THREADNESS"))
 
