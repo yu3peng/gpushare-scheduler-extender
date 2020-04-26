@@ -114,15 +114,15 @@ spec:
         - name: my-scheduler-config
           mountPath: /my-scheduler
       - name: my-scheduler-extender-ctr
-        image: a/b:c
+        image: yu3peng/gpushare-scheduler-extender:v0.1.0
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
             path: /version
-            port: 39999
+            port: 33333
         readinessProbe:
           httpGet:
             path: /version
-            port: 39999
+            port: 33333
         ports:
-          - containerPort: 39999
+          - containerPort: 33333
