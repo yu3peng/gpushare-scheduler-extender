@@ -14,7 +14,7 @@ RUN GO111MODULE=on go mod download
 COPY . .
 
 # RUN go build -o /go/bin/gpushare-sche-extender cmd/*.go
-RUN go build -ldflags "-X main.VERSION=$VERSION -X 'main.BUILD_TIME=`date`' -X 'main.GO_VERSION=`go version`'" -o /go/bin/gpushare-sche-extender cmd/*.go
+RUN go build -ldflags "-X routes.VERSION=$VERSION -X 'routes.BUILD_TIME=`date`' -X 'routes.GO_VERSION=`go version`'" -o /go/bin/gpushare-sche-extender cmd/*.go
 
 FROM alpine:3.11.6
 
