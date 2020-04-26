@@ -12,4 +12,4 @@ FROM gcr.io/google_containers/ubuntu-slim:0.14
 
 COPY --from=build /go/bin/gpushare-sche-extender /usr/bin/gpushare-sche-extender
 
-CMD ["gpushare-sche-extender"]
+ENTRYPOINT ["gpushare-sche-extender"]
