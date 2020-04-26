@@ -24,11 +24,6 @@ const (
 	inspectListPrefix = apiPrefix + "/inspect"
 )
 
-var (
-	version = "0.1.0"
-	// mu      sync.RWMutex
-)
-
 func checkBody(w http.ResponseWriter, r *http.Request) {
 	if r.Body == nil {
 		http.Error(w, "Please send a request body", 400)
