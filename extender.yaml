@@ -64,14 +64,18 @@ data:
       {"name" : "EqualPriority", "weight" : 1}
     ],
     "extenders" : [{
-      "urlPrefix": "http://localhost/gpushare-scheduler",
-      "filterVerb": "predicates/always_true",
-      "prioritizeVerb": "priorities/zero_score",
-      "preemptVerb": "preemption",
-      "bindVerb": "",
-      "weight": 1,
+      "urlPrefix": "http://127.0.0.1:33333/gpushare-scheduler",
+      "filterVerb": "filter",
+      "bindVerb":   "bind",
       "enableHttps": false,
-      "nodeCacheCapable": false
+      "nodeCacheCapable": true,
+      "managedResources": [
+        {
+          "name": "aliyun.com/gpu-mem",
+          "ignoredByScheduler": false
+        }
+      ],
+      "ignorable": false
     }],
     "hardPodAffinitySymmetricWeight" : 10
   }
